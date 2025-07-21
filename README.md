@@ -1,12 +1,51 @@
-# React + Vite
+# Map Pin Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple interactive map tool that allows users to drop pins, enter remarks, and optionally fetch addresses using coordinates. Useful for visualizing and annotating custom locations on a map.
 
-Currently, two official plugins are available:
+### Demo
+[Click here to watch the demo](https://www.loom.com/share/1b2916e0e22b4544b54d3067313af794?sid=5152e310-0b7d-4dce-b370-4c624a585178)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+###  Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Interactive Map Interface**  
+  Users can drop pins anywhere on the map.
+
+- **Add Remarks**  
+  A popup allows users to add notes to each pin.
+
+- **Address Fetching** *(optional)*  
+  Automatically retrieves address using pin's lat/lng via OpenStreetMap (Nominatim API).
+
+- **Local Storage Support**  
+  Pins, remarks, and addresses are stored locally for persistence.
+
+- **Sidebar Listing & Navigation**  
+  View all saved pins in a sidebar and navigate to each by clicking on them.
+
+---
+
+### Success Criteria
+
+- Easy-to-use map interface.
+- Pins with remarks and optional addresses.
+- Persistent data using local storage.
+- Sidebar to manage and revisit saved pins.
+
+---
+
+### Tech Stack
+
+- React
+- Leaflet.js
+- OpenStreetMap API
+- Local Storage
+
+---
+
+### Setup
+
+```bash
+npm install
+npm run dev
